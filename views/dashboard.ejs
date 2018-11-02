@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+<% include ./_layouts/head %>
+
+</head>
+
+<body>
+  <% include ./_layouts/preload %>
+
+<div id="page-transitions" class="page-build">
+    <div class="page-bg gradient-body-1"></div>
+
+    <% include ./_layouts/topbar %>
+
+    <% include ./_layouts/sidebar %>
+
+	<div class="page-content header-clear-larger">
+
+    <div class="content-box shadow-large bg-white">
+        <div class="top-25 bottom-25"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
+            <h3 class="center-text regularbold bottom-0">Social Networks</h3>
+            <p class="center-text small-text color-highlight bottom-30">Social Networks by Popularity in 2017</p>
+            <canvas class="chart" id="pie-chart" width="772" height="772" style="display: block; height: 386px; width: 386px;"></canvas>
+        </div>
+    </div>
+
+    <div class="content-box shadow-large bg-white">
+              <div class="top-25 bottom-0"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
+                  <h3 class="center-text regularbold bottom-0">Mobile Devices</h3>
+                  <p class="center-text small-text color-highlight">Mobile Devices by Use in 2017</p>
+                  <canvas class="chart" id="doughnut-chart" width="772" height="772" style="display: block; height: 386px; width: 386px;"></canvas>
+              </div>
+          </div>
+
+		<div class="content-strip content-box shadow-large">
+			<div class="container">
+				<h1 class="ultrabold uppercase color-white center-text fa-3x">Flash Sale</h1>
+				<p class="small-text color-gray-light center-text bottom-15">Buy One Get One Free!</p>
+				<div class="decoration deco-thick deco-0 top-15 bottom-30"></div>
+				<p class="boxed-text bottom-30 color-white font-14 opacity-60 thin">
+					We just started a flash sale! Hurry! It doesn't last forever! Get awesome discounts now!
+				</p>
+				<div class="countdown color-white boxed-text-large bottom-30">
+					<div class="countdown-years">
+						<div id="years"></div>
+						<em>years</em>
+					</div>
+					<div class="countdown-days">
+						<div id="days"></div>
+						<em>days</em>
+					</div>
+					<div class="countdown-hours">
+						<div id="hours"></div>
+						<em>hours</em>
+					</div>
+					<div class="countdown-minutes">
+						<div id="minutes"></div>
+						<em>minutes</em>
+					</div>
+					<div class="countdown-seconds disabled">
+						<div id="seconds"></div>
+						<em>seconds</em>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<a href="#" class="button button-round shadow-large button-blue button-center-large button-s uppercase ultrabold">Purchase Now</a>
+			</div>
+			<div class="overlay bg-black opacity-90"></div>
+			<div class="content-strip-bg preload-image" data-src="images/pictures_vertical/bg10.jpg"></div>
+		</div>
+
+		<div class="content-box bg-white">
+			<h3 class="uppercase ultrabold top-30 bottom-0 center-text"><i class="fa fa-star color-yellow-dark icon-clear-right"></i>Featured Products</h3>
+			<p class="center-text bottom-15">The most popular products in our store.</p>
+			<div class="double-slider owl-carousel owl-has-dots bottom-15">
+				<div class="store-featured-1">
+					<a href="#"><img src="images/placeholders/4a.jpg" alt="img"></a>
+					<u>$ 999.99</u>
+					<span class="color-green-dark">In Stock</span>
+					<strong>Night Black SmartPhone</strong>
+					<em>34GB Capacity, 6GB RAM,  IP68 WaterProof, 50MP Camera</em>
+					<div class="store-featured-1-buttons">
+						<a href="#" class="shadow-icon-large store-featured-1-cart"><i class="fa fa-shopping-cart color-black font-12"></i></a>
+						<a href="#" class="shadow-icon-large store-featured-1-favorite"><i class="fa fa-heart color-red-dark font-12"></i></a>
+					</div>
+				</div>
+				<div class="store-featured-1">
+					<a href="#"><img src="images/placeholders/4b.jpg" alt="img"></a>
+					<u>$ 599.99</u>
+					<span class="color-green-dark">In Stock</span>
+					<strong>Pinkish Gold SmartPhone</strong>
+					<em>34GB Capacity, 6GB RAM,  IP68 WaterProof, 50MP Camera</em>
+					<div class="store-featured-1-buttons">
+						<a href="#" class="shadow-icon-large store-featured-1-cart"><i class="fa fa-shopping-cart color-black font-12"></i></a>
+						<a href="#" class="shadow-icon-large store-featured-1-favorite"><i class="fa fa-heart color-red-dark font-12"></i></a>
+					</div>
+				</div>
+				<div class="store-featured-1">
+					<a href="#"><img src="images/placeholders/4c.jpg" alt="img"></a>
+					<u>$ 399.99</u>
+					<span class="color-red-dark">Out of Stock</span>
+					<strong>Champagne SmartPhone</strong>
+					<em>34GB Capacity, 6GB RAM,  IP68 WaterProof, 50MP Camera</em>
+					<div class="store-featured-1-buttons">
+						<a href="#" class="shadow-icon-large store-featured-1-cart"><i class="fa fa-shopping-cart color-black font-12"></i></a>
+						<a href="#" class="shadow-icon-large store-featured-1-favorite"><i class="fa fa-heart color-red-dark font-12"></i></a>
+					</div>
+				</div>
+				<div class="store-featured-1">
+					<a href="#"><img src="images/placeholders/4d.jpg" alt="img"></a>
+					<u>$ 299.99</u>
+					<span class="color-blue-dark">Preorder Available</span>
+					<strong>Charcoal Gray SmartPhone</strong>
+					<em>34GB Capacity, 6GB RAM,  IP68 WaterProof, 50MP Camera</em>
+					<div class="store-featured-1-buttons">
+						<a href="#" class="shadow-icon-large store-featured-1-cart"><i class="fa fa-shopping-cart color-black font-12"></i></a>
+						<a href="#" class="shadow-icon-large store-featured-1-favorite"><i class="fa fa-heart color-red-dark font-12"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content-box bg-white">
+			<h3 class="uppercase ultrabold top-30 bottom-0 center-text"><i class="fa fa-link color-blue-dark icon-clear-right"></i>Useful Links</h3>
+			<p class="center-text bottom-15">Get around our store much faster and easier.</p>
+			<div class="store-links bottom-30">
+				<a href="#"><i class="fa fa-user"></i>Your Account</a>
+				<a href="#"><i class="fa fa-credit-card"></i>Payment Methods</a>
+				<a href="#"><i class="fa fa-pencil-alt"></i>Terms of Service</a>
+				<a href="#"><i class="fa fa-code"></i>Create Account</a>
+				<a href="#"><i class="fa fa-lock"></i>Logout Account</a>
+				<a href="#"><i class="fa fa-shopping-cart"></i>Shopping Cart</a>
+				<a href="#"><i class="fa fa-truck"></i>Delivery Times</a>
+				<a href="#"><i class="fa fa-sync"></i>Refund Policy</a>
+				<a href="#"><i class="fa fa-question"></i>Help Center</a>
+				<a href="#"><i class="fa fa-exclamation"></i>Report Issue</a>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+        <div class="footer footer-detached shadow-large footer-light">
+			<a href="#" class="footer-logo"></a>
+			<strong>Built with <i class="fas fa-heart color-red-light"></i> by Elites</strong>
+			<p class="footer-text">
+				Simplicity and power packed into a beautiful, feature filled, fast, mobile template.
+			</p>
+			<div class="footer-socials">
+				<a href="#"><i class="icon-shadow facebook-bg fab fa-facebook-f font-16"></i></a>
+				<a href="#"><i class="icon-shadow twitter-bg fab fa-twitter font-16"></i></a>
+				<a href="#"><i class="icon-shadow google-bg fab fa-google-plus-g font-16"></i></a>
+				<a href="#" data-menu-type="menu-box-bottom" data-menu="menu-share"><i class="icon-shadow instagram-bg fas fa-share-alt font-14"></i></a>
+				<a href="#" data-menu-type="menu-box-bottom" data-menu="menu-phone"><i class="icon-shadow bg-green-dark fas fa-phone font-16"></i></a>
+			</div>
+            <p class="footer-links"><a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a> | <a href="#" class="back-to-top"> Back to Top</a></p>
+			<p class="footer-copyright">&copy; Enabled <span class="copyright-year"></span>. All rights reserved.</p>
+		</div>
+	</div>
+
+    <div id="menu-cart" data-menu-height="395" class="menu menu-box-top bg-white shadow-large">
+        <div class="menu-scroll menu-scroll-no-top">
+			<div class="content bottom-0">
+				<div class="menu-cart-item">
+					<img class="preload-image" src="images/empty.png" data-src="images/placeholders/1.jpg" alt="img">
+					<strong>Black Smart Watch</strong>
+					<span>Sport Band, Water Proof, 132 GB, Black Water Proof, 132 GB, Black</span>
+					<em>$299.99 <del>$399.99</del></em>
+				</div>
+				<div class="menu-cart-item">
+					<img class="preload-image" src="images/empty.png" data-src="images/placeholders/2.jpg" alt="img">
+					<strong>White Smart Watch</strong>
+					<span>Sport Band, Water Proof, 132 GB, Black Water Proof, 132 GB, Black</span>
+					<em>$299.99 <del>$399.99</del></em>
+				</div>
+				<div class="menu-cart-item bottom-0">
+					<img class="preload-image" src="images/empty.png" data-src="images/placeholders/3.jpg" alt="img">
+					<strong>Yellow Smart Watch</strong>
+					<span>Sport Band, Water Proof, 132 GB, Black Water Proof, 132 GB, Black</span>
+					<em>$299.99 <del>$399.99</del></em>
+				</div>
+				<a href="#" class="button button-blue button-full button-sm button-round shadow-icon-large uppercase bold top-10 bottom-10">Proceed to Checkout</a>
+			</div>
+        </div>
+    </div>
+
+    <% include ./_layouts/contact-form %>
+
+    <% include ./_layouts/theme %>
+
+	<a href="#" class="back-to-top-badge back-to-top-small shadow-large bg-blue-dark"><i class="fa fa-angle-up"></i>Back to Top</a>
+</div>
+
+<% include ./_layouts/foot %>
+
+</body>

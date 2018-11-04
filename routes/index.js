@@ -30,8 +30,12 @@ router.get('/profile', function(req, res, next) {
   res.render('profile', { title: 'Profile' });
 });
 
-router.get('/add-donation', function(req, res, next) {
-  res.render('add-donation', { title: 'Add Donation' });
+router.get('/donor', function(req, res, next) {
+  res.render('donor', { title: 'Donor List' });
+});
+
+router.get('/add-donor', function(req, res, next) {
+  res.render('add-donor', { title: 'Add Donor' });
 });
 
 module.exports = router;

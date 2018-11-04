@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<% include ./_layouts/head %>
+</head>
+
+<body>
+  <% include ./_layouts/preload %>
+
+<div id="page-transitions" class="page-build">
+    <div class="page-bg gradient-body-1"></div>
+
+    <% include ./_layouts/topbar %>
+
+    <% include ./_layouts/sidebar %>
+
+	<div class="page-content header-clear-larger">
+
+    <div class="content-box shadow-large bg-white">
+          <div class="top-25 bottom-30">
+             <h4>Donor Form</h4>
+
+             <div class="input-simple-1 has-icon input-green bottom-30"><strong>Required Field</strong><em>Full Name</em><i class="fa fa-user"></i><input type="text" placeholder="Jonh Doe"></div>
+             <div class="input-simple-1 has-icon input-blue bottom-30"><strong>Required Field</strong><em>Email</em><i class="fa fa-envelope"></i><input type="text" placeholder="mail@domain.com"></div>
+             <div class="input-simple-1 has-icon input-blue bottom-30"><strong>Required Field</strong><em>Address</em><i class="fa fa-building"></i><input type="text"></div>
+             <div class="input-simple-1 has-icon input-blue bottom-30"><strong>Required Field</strong><em>Phone</em><i class="fa fa-envelope"></i><input type="text" placeholder="mail@domain.com"></div>
+             <div class="input-simple-1 has-icon input-blue bottom-30"><strong>Required Field</strong><em>Age</em><i class="fa fa-envelope"></i><input type="text" placeholder="mail@domain.com"></div>
+
+             <div class="select-box select-box-1">
+                 <strong>Required Field</strong>
+                 <em>Select a Gender</em>
+                 <select>
+                   <option value="" hidden="">Select option</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Others</option>
+                 </select>
+              </div>
+
+              <div class="select-box select-box-1">
+                  <strong>Required Field</strong>
+                  <em>Select a Blood Gropup</em>
+                  <select name="blood_group">
+                    <option value="" hidden="">Select option</option>
+                    <option value="A+">A +ve</option>
+                    <option value="A-">A -ve</option>
+                    <option value="B+">B +ve</option>
+                    <option value="B-">B -ve</option>
+                    <option value="AB+">AB +ve</option>
+                    <option value="AB-">AB -ve</option>
+                    <option value="O+">O +ve</option>
+                    <option value="O-">O -ve</option>
+                  </select>
+               </div>
+
+                <a href="/donor" class="button button-full button-round button-green-3d button-green uppercase ultrabold">Submit</a>
+             </div>
+      </div>
+
+    <% include ./_layouts/contact-form %>
+
+    <% include ./_layouts/theme %>
+
+	<a href="#" class="back-to-top-badge back-to-top-small shadow-large bg-blue-dark"><i class="fa fa-angle-up"></i>Back to Top</a>
+</div>
+
+<% include ./_layouts/foot %>
+
+</body>

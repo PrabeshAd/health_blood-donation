@@ -34,8 +34,8 @@ router.get('/donor', function(req, res, next) {
   res.render('donor', { title: 'Donor List' });
 });
 
-router.get('/add-donor', function(req, res, next) {
-  res.render('add-donor', { title: 'Add Donor' });
+router.get('/edit-donor', function(req, res, next) {
+  res.render('edit-donor', { title: 'Edit Donor' });
 });
 
 module.exports = router;

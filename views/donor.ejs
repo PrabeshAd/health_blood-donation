@@ -15,54 +15,54 @@
     <% include ./_layouts/sidebar %>
 
 	<div class="page-content header-clear-larger">
+
     <div class="content-box shadow-large bg-white">
-          <div class="top-15 bottom-0">
-              <div class="toggle">
-                  <h5 class="toggle-title">Add Donor</h5>
-                  <a href="#" class="toggle-classic toggle-trigger"><i class="fa fa-plus"></i></a>
-                  <div class="toggle-content" style="display: none;">
-                    <div class="input-simple-1 has-icon input-green bottom-30"><strong>Required Field</strong><em>Full Name</em><i class="fa fa-user"></i><input type="text" placeholder="Jonh Doe"></div>
-                    <div class="input-simple-1 has-icon input-blue bottom-30"><em>Email</em><i class="fa fa-envelope"></i><input type="text" placeholder="mail@domain.com"></div>
-                    <div class="input-simple-1 has-icon input-blue bottom-30"><em>Address</em><i class="fa fa-building"></i><input type="text"></div>
-                    <div class="input-simple-1 has-icon input-blue bottom-30"><strong>Required Field</strong><em>Phone</em><i class="fa fa-phone"></i><input type="number"></div>
-                    <div class="input-simple-1 has-icon input-blue bottom-30"><strong>Required Field</strong><em>Age</em><input type="number"></div>
+            <div class="top-15 bottom-0">
+                <div class="toggle">
+                    <h5 class="toggle-title">Add Donor</h5>
+                    <a href="#" class="toggle-classic toggle-trigger"><i class="fa fa-plus"></i></a>
+                    <div class="toggle-content" style="display: none;">
+                      <div class="input-simple-1 has-icon input-green bottom-30"><strong>Required Field</strong><em>Full Name</em><i class="fa fa-user"></i><input type="text" name="name" placeholder="Jonh Doe"></div>
+                      <div class="input-simple-1 has-icon input-blue bottom-30"><em>Email</em><i class="fa fa-envelope"></i><input type="text" name="email" placeholder="mail@domain.com"></div>
+                      <div class="input-simple-1 has-icon input-blue bottom-30"><em>Address</em><i class="fa fa-building"></i><input type="text" name="address"></div>
+                      <div class="input-simple-1 has-icon input-blue bottom-30"><strong>Required Field</strong><em>Phone</em><i class="fa fa-phone"></i><input type="number" name="number"></div>
+                      <div class="input-simple-1 has-icon input-blue bottom-30"><strong>Required Field</strong><em>Age</em><input type="number" name="age"></div>
 
-                    <div class="select-box select-box-1">
-                        <strong>Required Field</strong>
-                        <em>Select a Gender</em>
-                        <select>
-                          <option value="" hidden="">Select option</option>
-                           <option value="male">Male</option>
-                           <option value="female">Female</option>
-                           <option value="others">Others</option>
-                        </select>
-                     </div>
+                      <div class="select-box select-box-1">
+                          <strong>Required Field</strong>
+                          <em>Select a Gender</em>
+                          <select name="gender">
+                            <option value="" hidden="">Select option</option>
+                             <option value="male">Male</option>
+                             <option value="female">Female</option>
+                             <option value="others">Others</option>
+                          </select>
+                       </div>
 
-                     <div class="select-box select-box-1">
-                         <strong>Required Field</strong>
-                         <em>Select a Blood Gropup</em>
-                         <select name="blood_group">
-                           <option value="" hidden="">Select option</option>
-                           <option value="A+">A +ve</option>
-                           <option value="A-">A -ve</option>
-                           <option value="B+">B +ve</option>
-                           <option value="B-">B -ve</option>
-                           <option value="AB+">AB +ve</option>
-                           <option value="AB-">AB -ve</option>
-                           <option value="O+">O +ve</option>
-                           <option value="O-">O -ve</option>
-                         </select>
-                      </div>
+                       <div class="select-box select-box-1">
+                           <strong>Required Field</strong>
+                           <em>Select a Blood Gropup</em>
+                           <select name="blood_group" name="blood_group">
+                             <option value="" hidden="">Select option</option>
+                             <option value="A+">A +ve</option>
+                             <option value="A-">A -ve</option>
+                             <option value="B+">B +ve</option>
+                             <option value="B-">B -ve</option>
+                             <option value="AB+">AB +ve</option>
+                             <option value="AB-">AB -ve</option>
+                             <option value="O+">O +ve</option>
+                             <option value="O-">O -ve</option>
+                           </select>
+                        </div>
 
-                      <div class="input-simple-1 has-icon input-blue bottom-30"><strong>Required Field</strong><em>Last Donated Date</em><i class="fa fa-calendar"></i><input type="number"></div>
-
+                        <div class="input-simple-1 has-icon input-blue bottom-30"><strong>Required Field</strong><em>Last Donated Date</em><i class="fa fa-calendar" name="last_donated"></i><input type="number"></div>
                        <a href="/donor" class="button button-full button-round button-green-3d button-green uppercase ultrabold">Submit</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-    <div class="content-box content-box-full bottom-0">
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    <div class="content-box content-box-full bottom-0">
           <table class="table-borders-dark top-15 bottom-30 round-element bg-white shadow-large">
               <tbody><tr>
                   <th>Name</th>
@@ -84,10 +84,14 @@
                   <td class="color-green-dark">05-Feb-2016</td>
                   <td><a href="/edit-donor"><i class="fa fa-edit color-green-dark"></i></a></i></td>
               </tr>
-          </tbody></table>
+          </tbody>
+        </table>
       </div>
+	</div>
 
     <% include ./_layouts/contact-form %>
+
+    <% include ./_layouts/notification %>
 
     <% include ./_layouts/theme %>
 

@@ -15,23 +15,21 @@
       <a href="/donor" class="back-button header-icon header-icon-1"><i class="fas fa-angle-left"></i></a>
     </div>
 
-    <% include ./_layouts/sidebar %>
-
 	<div class="page-content header-clear-larger">
 
     <div class="content-box shadow-large bg-white">
           <div class="top-25 bottom-30">
 
-            <div class="input-simple-1 has-icon input-green bottom-30"><strong>Required Field</strong><em>Full Name</em><i class="fa fa-user"></i><input type="text" placeholder="Jonh Doe"></div>
-            <div class="input-simple-1 has-icon input-blue bottom-30"><em>Email</em><i class="fa fa-envelope"></i><input type="text" placeholder="mail@domain.com"></div>
-            <div class="input-simple-1 has-icon input-blue bottom-30"><em>Address</em><i class="fa fa-building"></i><input type="text"></div>
-            <div class="input-simple-1 has-icon input-blue bottom-30"><strong>Required Field</strong><em>Phone</em><i class="fa fa-phone"></i><input type="number"></div>
-            <div class="input-simple-1 has-icon input-blue bottom-30"><strong>Required Field</strong><em>Age</em><input type="number"></div>
+            <div class="input-simple-1 has-icon input-green bottom-30"><strong>Required Field</strong><em>Full Name</em><i class="fa fa-user"></i><input type="text" name="name" placeholder="Jonh Doe"></div>
+            <div class="input-simple-1 has-icon input-blue bottom-30"><em>Email</em><i class="fa fa-envelope"></i><input type="text" name="email" placeholder="mail@domain.com"></div>
+            <div class="input-simple-1 has-icon input-blue bottom-30"><em>Address</em><i class="fa fa-building"></i><input type="text" name="address"></div>
+            <div class="input-simple-1 has-icon input-blue bottom-30"><strong>Required Field</strong><em>Phone</em><i class="fa fa-phone"></i><input type="number" name="number"></div>
+            <div class="input-simple-1 has-icon input-blue bottom-30"><strong>Required Field</strong><em>Age</em><input type="number" name="age"></div>
 
             <div class="select-box select-box-1">
                 <strong>Required Field</strong>
                 <em>Select a Gender</em>
-                <select>
+                <select name="gender">
                   <option value="" hidden="">Select option</option>
                    <option value="male">Male</option>
                    <option value="female">Female</option>
@@ -42,7 +40,7 @@
              <div class="select-box select-box-1">
                  <strong>Required Field</strong>
                  <em>Select a Blood Gropup</em>
-                 <select name="blood_group">
+                 <select name="blood_group" name="blood_group">
                    <option value="" hidden="">Select option</option>
                    <option value="A+">A +ve</option>
                    <option value="A-">A -ve</option>
@@ -55,15 +53,11 @@
                  </select>
               </div>
 
-              <div class="input-simple-1 has-icon input-blue bottom-30"><strong>Required Field</strong><em>Last Donated Date</em><i class="fa fa-calendar"></i><input type="number"></div>
+              <div class="input-simple-1 has-icon input-blue bottom-30"><strong>Required Field</strong><em>Last Donated Date</em><i class="fa fa-calendar" name="last_donated"></i><input type="number"></div>
 
                <a href="/donor" class="button button-full button-round button-green-3d button-green uppercase ultrabold">Submit</a>
              </div>
       </div>
-
-    <% include ./_layouts/contact-form %>
-
-    <% include ./_layouts/theme %>
 
 	<a href="#" class="back-to-top-badge back-to-top-small shadow-large bg-blue-dark"><i class="fa fa-angle-up"></i>Back to Top</a>
 </div>

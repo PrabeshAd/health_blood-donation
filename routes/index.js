@@ -3,10 +3,6 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('landing-page', { title: 'Landing-page' });
-});
-
-router.get('/login', function(req, res, next) {
   res.render('login', { title: 'Login' });
 });
 
@@ -20,18 +16,6 @@ router.get('/events', function(req, res, next) {
 
 router.get('/dashboard', function(req, res, next) {
   res.render('dashboard', { title: 'Dashboard' });
-});
-
-router.get('/page-signup', function(req, res, next) {
-  res.render('page-signup', { title: 'Page-signup' });
-});
-
-router.get('/profile', function(req, res, next) {
-  res.render('profile', { title: 'Profile' });
-});
-
-router.get('/donor', function(req, res, next) {
-  res.render('donor', { title: 'Donor List' });
 });
 
 router.get('/edit-donor', function(req, res, next) {
